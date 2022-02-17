@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  align-items: center;
+
+  &__img {
+    width: 3rem;
+  }
+
+  &__text {
+    font-family: "Cookie", sans-serif;
+    font-size: 2rem;
+  }
+
+  &--footer {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,63 @@
+@use "../base/variables";
+
+header {
+  border-bottom: solid 1px variables.$primary ;
+  width: 90vw;
+  margin-inline: auto;
+}
+
+.c-navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  padding-block: 0.7rem;
+  margin-inline: auto;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.c-navbar__menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+
+  li {
+    font-weight: 700;
+    color: variables.$black;
+    line-height: 1.5;
+
+    a.is-active {
+      color: darken(variables.$pink-text, 15);
+    }
+  }
+
+}
+
+.c-navbar__account {
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+  }
+}
+
+.carousel {
+  width: 45vw !important;
+}
+
+.carousel-img {
+  width: 45vw;
+  height: 350px;
+}
