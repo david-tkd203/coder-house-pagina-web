@@ -1,11 +1,22 @@
 @use "../base/variables";
+@use "../base/breakpoints";
+
 .product {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  width: 16rem;
+  width: 9rem;
   gap: 1rem;
   border-radius: 11px;
   border: solid 1px variables.$primary;
+
+  @include breakpoints.responsive('md', min) {
+    width: 11rem;
+  }
+
+  @include breakpoints.responsive('lg', min) {
+    width: 16rem;
+  }
 }
 
 .product__img {
@@ -48,5 +59,15 @@
 
 .products {
   display: flex;
+  flex-flow: row wrap;
+  width: 100%;
   gap: 3rem;
+
+  @include breakpoints.responsive('sm', max) {
+    gap: 1rem;
+  }
+
+  @include breakpoints.responsive('md', max) {
+    gap: 2rem;
+  }
 }

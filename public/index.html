@@ -28,16 +28,21 @@
           <span class="logo__text">Rosario papelería</span>
         </div>
       </a>
-      <ul class="c-navbar__menu">
+      <ul class="c-navbar__menu links">
         <li><a class="is-active" href="#">Inicio</a></li>
         <li><a href="quienes-somos.html">Quienes somos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
       <ul class="c-navbar__menu">
-        <li><a href="#">Carrito <i class="bi bi-cart-fill"></i></a></li>
+        <li><a href="#"><i class="bi bi-cart-fill"></i></a></li>
         <li>
-          <button type="button" class="c-navbar__account">
+          <button type="button" class="c-navbar__account" id="account-menu">
             <img src="media/account.jpg" alt="Imagen de perfil de tu cuenta">
+          </button>
+        </li>
+        <li>
+          <button type="button" class="c-navbar__burger" id="burger-menu">
+            <span class="burger-menu"></span>
           </button>
         </li>
       </ul>
@@ -149,5 +154,6 @@
   <script>
       AOS.init();
   </script>
+  <script src="scripts/index.js"></script>
 </body>
 </html>

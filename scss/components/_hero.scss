@@ -1,4 +1,6 @@
 @use "../base/variables";
+@use "../base/breakpoints";
+
 .hero {
   display: flex;
   flex-flow: row nowrap;
@@ -6,6 +8,9 @@
   margin-inline: auto;
   margin-block: 3rem;
   gap: 2rem;
+  @include breakpoints.responsive('md', max) {
+    flex-direction: column;
+  }
 }
 
 .hero__cta {
